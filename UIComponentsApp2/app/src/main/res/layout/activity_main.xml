@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите добавки:"
+        android:textSize="22sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Флажок 1 -->
+    <CheckBox
+        android:id="@+id/cheeseBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сыр"
+        android:textSize="18sp"/>
+
+    <!-- Флажок 2 -->
+    <CheckBox
+        android:id="@+id/baconBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бекон"
+        android:textSize="18sp"/>
+
+    <!-- Кнопка проверки -->
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Проверить выбор"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите размер:"
+        android:textSize="18sp" />
+
+
+    <RadioGroup
+        android:id="@+id/sizeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/smallRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Маленькая (300р)" />
+
+        <RadioButton
+            android:id="@+id/mediumRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Средняя (500р)"
+            android:checked="true" /> <!-- Выбрана по умолчанию -->
+
+        <RadioButton
+            android:id="@+id/largeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Большая (700р)" />
+
+    </RadioGroup>
+</LinearLayout>

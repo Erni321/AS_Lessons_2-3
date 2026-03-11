@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Добро пожаловать!"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Это приложение для изучения UI-компонентов Android"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/clickButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Нажми на меня"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ваше имя"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/greetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Поздороваться"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/greetingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#4CAF50"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/starImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_star"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Star icon" />
+
+
+</LinearLayout>
